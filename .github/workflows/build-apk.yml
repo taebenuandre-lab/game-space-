@@ -21,8 +21,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+      # Runner ubuntu-latest sudah membawa Android SDK (ANDROID_HOME).
+      # Cukup pastikan lisensi diterima agar Gradle bisa mengunduh komponen yang kurang.
+      - name: Accept Android SDK licenses
+        run: |
+          yes | "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null 2>&1 || true
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -39,4 +42,3 @@ jobs:
           name: ZackGameSpace-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
-          
