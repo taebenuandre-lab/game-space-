@@ -36,6 +36,14 @@ jobs:
       - name: Build debug APK
         run: ./gradlew assembleDebug --stacktrace
 
+      - name: Verify APK
+        run: |
+          APK=$(ls app/build/outputs/apk/debug/*.apk | head -n1)
+          ls -l "$APK"; sha256sum "$APK"
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -n1)
+          "$BT/apksigner" verify --verbose "$APK"
+          "$BT/aapt2" dump badging "$APK" | head -n 20
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
