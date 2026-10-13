@@ -1,0 +1,4 @@
+// Konfigurasi tingkat root. Modul aplikasi ada di :app.
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}
