@@ -1,1 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_deep">#0A0B1F</color>
+    <color name="bg_deep_mid">#120C33</color>
+    <color name="bg_deep_end">#1E0B45</color>
+    <color name="card_fill">#CC12143A</color>
+    <color name="card_stroke">#667C4DFF</color>
+    <color name="input_fill">#22FFFFFF</color>
 
+    <color name="neon_blue">#2979FF</color>
+    <color name="neon_cyan">#00E5FF</color>
+    <color name="neon_violet">#7C4DFF</color>
+    <color name="neon_purple">#B026FF</color>
+    <color name="neon_alert">#FF4D8D</color>
+
+    <color name="text_primary">#F2F4FF</color>
+    <color name="text_secondary">#9AA0C8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ripple_light">#40FFFFFF</color>
+</resources>

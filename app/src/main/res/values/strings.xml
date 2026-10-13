@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zack Game Space</string>
+    <string name="app_tagline">Auto tap neon untuk game favoritmu</string>
+    <string name="service_label">Zack Auto Tap</string>
+    <string name="accessibility_description">Zack Game Space memakai layanan aksesibilitas hanya untuk mengirim tap otomatis ke titik yang kamu pilih. Layanan ini tidak membaca isi layar dan tidak mengirim data ke mana pun.</string>
+
+    <!-- Status -->
+    <string name="section_status">STATUS LAYANAN</string>
+    <string name="status_off">NONAKTIF</string>
+    <string name="status_hint_off">Aktifkan Zack Auto Tap di pengaturan Aksesibilitas agar bisa mengirim tap.</string>
+    <string name="status_waiting">MENUNGGU</string>
+    <string name="status_hint_waiting">Layanan sudah diaktifkan, sedang menyambung. Buka ulang aplikasi bila status tidak berubah.</string>
+    <string name="status_ready">SIAP</string>
+    <string name="status_hint_ready">Layanan aktif. Tampilkan overlay, buka game, lalu tekan MULAI.</string>
+    <string name="status_running">AUTO TAP BERJALAN</string>
+    <string name="status_hint_running">Tap terkirim: %1$d. Tekan STOP di overlay atau di sini untuk berhenti.</string>
+    <string name="btn_service_enable">AKTIFKAN LAYANAN AKSESIBILITAS</string>
+    <string name="btn_service_manage">BUKA PENGATURAN AKSESIBILITAS</string>
+
+    <!-- Konfigurasi -->
+    <string name="section_config">PENGATURAN TAP</string>
+    <string name="label_interval">Interval tap: %1$d ms (≈ %2$.1f tap/dtk)</string>
+    <string name="label_hold">Durasi sentuhan: %1$d ms</string>
+    <string name="label_repeat">Jumlah tap (kosong = tanpa batas)</string>
+    <string name="hint_repeat">Tanpa batas</string>
+    <string name="label_jitter">Geser titik acak ±6 px</string>
+
+    <!-- Aksi -->
+    <string name="btn_overlay_show">TAMPILKAN PANEL OVERLAY</string>
+    <string name="btn_overlay_hide">SEMBUNYIKAN PANEL OVERLAY</string>
+    <string name="btn_stop">STOP AUTO TAP</string>
+    <string name="btn_library">GAME LIBRARY</string>
+
+    <!-- Panduan -->
+    <string name="section_guide">CARA PAKAI</string>
+    <string name="guide_body">1. Aktifkan layanan aksesibilitas.\n2. Tekan Tampilkan Panel Overlay.\n3. Buka game, lalu geser crosshair ke tombol yang ingin ditap.\n4. Tekan MULAI di panel overlay. Tekan STOP untuk berhenti.\n\nAndroid 13+: bila opsi layanan abu-abu (aplikasi dipasang dari APK), buka Info Aplikasi → menu ⋮ → Izinkan setelan terbatas, lalu aktifkan lagi.</string>
+
+    <!-- Overlay -->
+    <string name="overlay_start">MULAI</string>
+    <string name="overlay_stop">STOP</string>
+    <string name="overlay_count">%1$d tap</string>
+
+    <!-- Game Library -->
+    <string name="library_title">Game Library</string>
+    <string name="library_back">‹ Kembali</string>
+    <string name="library_search_hint">Cari game atau aplikasi</string>
+    <string name="library_auto_overlay">Tampilkan overlay saat game dibuka</string>
+    <string name="library_count">%1$d aplikasi</string>
+    <string name="library_empty">Tidak ada aplikasi yang cocok.</string>
+    <string name="star_on">★</string>
+    <string name="star_off">☆</string>
+
+    <!-- Toast -->
+    <string name="toast_need_service">Aktifkan dulu layanan Zack Auto Tap di pengaturan Aksesibilitas.</string>
+    <string name="toast_overlay_shown">Overlay tampil. Buka game lalu geser crosshair ke titik target.</string>
+    <string name="toast_overlay_failed">Overlay gagal ditampilkan.</string>
+    <string name="toast_launch_failed">Aplikasi tidak dapat dibuka.</string>
+
+    <string name="cd_crosshair">Titik target tap</string>
+</resources>
